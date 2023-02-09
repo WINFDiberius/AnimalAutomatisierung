@@ -1,5 +1,6 @@
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -70,5 +71,11 @@ class AnimalTest {
         Assertions.assertEquals(youngAnimal, lion.ageCategory());
         Assertions.assertEquals(babyAnimal, snake.ageCategory());
         Assertions.assertEquals(oldAnimal, bear.ageCategory());
+    }
+
+    @Test
+    void isBabyAnimal() {
+        Animal cat2 = new Animal("Bobo", 1, "cat");
+        assertTrue(cat2.isBabyAnimal());
     }
 }

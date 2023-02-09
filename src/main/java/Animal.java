@@ -75,4 +75,13 @@ public class Animal {
             return "Old Animal";
         }
     }
+
+    public boolean isBabyAnimal(){
+        if(age <= 2)
+        {
+            return true;
+        }
+        return false;
+
+    }
 }
